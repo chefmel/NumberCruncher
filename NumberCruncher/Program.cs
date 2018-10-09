@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace NumberCruncher
 {
@@ -6,7 +7,9 @@ namespace NumberCruncher
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<int> nums = new List<int>() { 2, 5, 7, 9, 12, 16, 22, 26, 33, 40 };
+            Console.WriteLine(NumberUtility.SumOfEvens(nums));
+            Console.ReadLine();
         }
     }
 }
